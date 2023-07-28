@@ -1,5 +1,4 @@
 # Shows you can set the return variables before the return statement
-
 ```
 package main
 
@@ -16,4 +15,9 @@ func x() (err error) {
 	err = errors.New("this error")
 	return
 }
+```
+
+# For running unit tests with `//go:build unit_test` tag
+```
+ginkgo -tags=unit_test
 ```
