@@ -22,7 +22,20 @@ func x() (err error) {
 ginkgo -tags=unit_test
 ```
 
-# To gofumpt all files
+# To go fmt
 ```
+gofmt -s -w .
+
+// and
+
 gofumpt -l -w .
+
+// and
+
+gci write .
+```
+
+# To lint
+```
+golangci-lint run
 ```
