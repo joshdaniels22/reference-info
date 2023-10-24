@@ -21,3 +21,8 @@ func x() (err error) {
 ```
 ginkgo -tags=unit_test
 ```
+
+# To gofumpt all files
+```
+gofumpt -l -w .
+```
